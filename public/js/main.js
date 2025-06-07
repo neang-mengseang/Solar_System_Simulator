@@ -77,6 +77,11 @@ const defaultPlanetsData = [
   },
 ];
 
+const defaultValues = {};
+defaultPlanetsData.forEach((planet) => {
+  defaultValues[planet.name.toLowerCase()] = planet;
+});
+
 // Scene setup
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -552,14 +557,23 @@ async function init() {
   const planets = await createAllPlanets();
   document.getElementById("reset-button").addEventListener("click", () => {
     defaultPlanetsData.forEach((defaults, i) => {
-      const p = planets[i];
-      Object.assign(p, defaults);
-      p.mesh.scale.set(p.size, p.size, p.size);
-      p.mesh.position.set(p.orbitRadius, 0, 0);
+    const p = planets[i];
+    if (!p || !p.mesh) return; // skip if undefined or missing mesh
 
-      if (p.orbit) scene.remove(p.orbit);
-      p.orbit = createOrbit(p.orbitRadius);
+    // Reset planet properties safely
+    Object.assign(p, defaults);
+
+    // Reset mesh scale
+    p.mesh.scale.set(p.size, p.size, p.size);
+
+    // Reset position
+    p.mesh.position.set(p.orbitRadius, 0, 0);
+
+    // Remove old orbit and create a new one
+    if (p.orbit) scene.remove(p.orbit);
+    p.orbit = createOrbit(p.orbitRadius);
     });
+
 
     document.getElementById("planet-cards").innerHTML = "";
     planets.forEach((planet, i) => createPlanetCard(planet, i));
