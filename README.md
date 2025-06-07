@@ -92,4 +92,3 @@ Check out the live demo here: [SSSIm](https://sssim.netlify.app)
 
 For questions, suggestions, or contributions, please reach out via \[[mengseanggamming@gmail](mailto:mengseanggamming@gmail.com)] or open an issue on GitHub.
 
-```
