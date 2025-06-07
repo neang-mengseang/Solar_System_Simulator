@@ -63,10 +63,10 @@ Check out the live demo here: [SSSIm](https://sssim.netlify.app)
 
 ## 📸 Screenshots
 
-![Solar System Overview](path/to/screenshot1.png)
+![Solar System Overview](https://github.com/user-attachments/assets/ee406895-6703-4259-b50d-62b830cd9e0d)
 *Full solar system view.*
 
-![Planet Control Panel](path/to/screenshot2.png)
+![Planet Control Panel](https://github.com/user-attachments/assets/eb088a26-efdc-4c39-995c-a07ad7bfa9d3)
 *Adjusting planet properties.*
 
 ## ⚠️ Known Issues
