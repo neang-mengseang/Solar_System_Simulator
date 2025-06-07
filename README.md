@@ -76,7 +76,7 @@ Check out the live demo here: [SSSIm](https://sssim.netlify.app)
 * Some animations may be less smooth on lower-end devices.
 
 ## 🛤️ Roadmap
-* [✅] Planet Data Manager: sliders and reset controls for planet properties
+* [x] Planet Data Manager: sliders and reset controls for planet properties
 * [ ] Implement circular planet menu selection UI
 * [ ] Add moons and asteroid belts
 * [ ] Improve mobile UI and touch controls
