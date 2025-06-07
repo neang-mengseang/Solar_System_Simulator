@@ -62,6 +62,8 @@ Check out the live demo here: [SSSIm](https://sssim.netlify.app)
 * Sound effects for orbits and interactions 🎶
 
 ## 📸 Screenshots
+![Earth Night Side](https://github.com/user-attachments/assets/afaaa023-fb4f-46f2-ad06-aba11744337f)
+*Side of earth that not facing the sun*
 
 ![Solar System Overview](https://github.com/user-attachments/assets/ee406895-6703-4259-b50d-62b830cd9e0d)
 *Full solar system view.*
